@@ -4,10 +4,14 @@ font-family: "Roboto Condensed", sans-serif;
 
 p{
     font-size:24px;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .blue-background{
-    background:#00A6C2;
+    background: -webkit-linear-gradient(bottom right, #00A6C2 0%, #1fc8db 51%, #2cb5e8 75%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #00A6C2 0%, #1fc8db 51%, #2cb5e8 75%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #00A6C2 0%, #1fc8db 51%, #2cb5e8 75%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #00A6C2 0%, #1fc8db 51%, #2cb5e8 75%); /* Standard syntax */
     color:#fff;
 }
 
@@ -18,7 +22,7 @@ p{
     margin: 10px 0 10px 30px;
     max-height: 55px;
 }
-.email-wrapper{
+.email-btn-wrapper{
 	margin: 15px 0;
     display: block;
     font-size: 20px;
@@ -26,7 +30,7 @@ p{
     padding: 0 25px;
 }
 
-.email{
+.email-btn{
 	font-size:24px;
     background:#fbab12;
     color:#fff;
@@ -41,7 +45,10 @@ h1{
     text-shadow: 1px 1px 1px #333;
 }
 
-form{
+div#mc_embed_signup{
+    background:transparent;
+}
+form.validate{
     margin: 0 auto -100px;
     border-radius: 10px;
     background-color: rgba(255,255,255,0.85);
@@ -57,20 +64,25 @@ form input{
     width: 100%;
     margin-top: 12px;
     padding: 0 0 0 15px;
+    font-family: "Roboto Condensed", sans-serif;  
+    font-size:20px;
 }
 
-form h3{
-    font-size: 30px;
-}
 
 .form-header{
-	padding: 10px 25px;
+	padding: 10px 25px 0;
     text-align: center;
     color: #555;
 }
 
 .form-header h3{
     text-transform:uppercase;
+     font-size: 30px;
+    font-family: 'Oswald', sans-serif; 
+}
+
+form h4{
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .form-main{
@@ -85,6 +97,10 @@ form h3{
 
 .button-submit-wrapper input{
 padding:0;
+}
+
+form .btn-cool-wrapper{
+    margin-bottom:0;
 }
 
 /*Section first*/

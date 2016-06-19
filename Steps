@@ -3,3 +3,7 @@ Steps
  npm init
 
  npm install -g gulp
+
+ npm install --save-dev gulp
+
+ npm install gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename --save-dev

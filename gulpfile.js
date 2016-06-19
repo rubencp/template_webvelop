@@ -1,31 +1,15 @@
 // Include gulp
 var gulp = require('gulp');
 
-// Include Our Plugins
-//var jshint = require('gulp-jshint');
-/*
-var sass = require('gulp-sass');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
-*/
-
 var injectPartials = require('gulp-inject-partials');
 
 var browserSync = require('browser-sync').create();
-
-
-
-gulp.task('merge_index', merge_partials );
-
 
 function merge_partials(){
       return gulp.src('./src/index.html')
            .pipe(injectPartials())
            .pipe(gulp.dest('./'));
 }
-
-
 
 // Start a server with LiveReload to preview the site in
 function server(done) {
@@ -40,17 +24,30 @@ function watch() {
   gulp.watch(['src/**/*.html', 'src/partials/**/*']).on('change', gulp.series(merge_partials, browserSync.reload));
 }
 
-// Static server
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        }
-    });
+gulp.task('server_task',
+  gulp.series(server, watch));
 
-    gulp.watch("*.html").on("change", browserSync.reload);
-    gulp.watch("*.html").on("change", merge_index);
-});
+gulp.task('build', merge_partials );
+
+
+
+
+
+
+
+
+
+
+
+
+// Include Our Plugins
+//var jshint = require('gulp-jshint');
+/*
+var sass = require('gulp-sass');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var rename = require('gulp-rename');
+*/
 
 // Lint Task
 /*
@@ -80,19 +77,9 @@ gulp.task('scripts', function() {
 });
 */
 
-// Watch Files For Changes
-gulp.task('watch', function() {
-   //gulp.watch('src/pages/**/*.html').on('change', gulp.series(browser.reload));
-   gulp.watch('*.html').on('change', browserSync.reload);
-   // gulp.watch('js/*.js', ['lint', 'scripts']);
-   // gulp.watch('scss/*.scss', ['sass']);
-
-});
-
 // Default Task
 //gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
 //gulp.task('default', [ server , watch ] );
 
-gulp.task('server_task',
-  gulp.series(server, watch));
+
 

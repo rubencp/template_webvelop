@@ -9,4 +9,8 @@ Steps
  npm install gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename --save-dev
 
  npm install browser-sync gulp --save-dev
- 
+
+ npm install --save-dev gulp-inject-partials
+
+  <!-- partial:partial/_mypartial.html -->
+  <!-- partial -->

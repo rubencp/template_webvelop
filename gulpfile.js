@@ -10,7 +10,18 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 */
 
+var injectPartials = require('gulp-inject-partials');
+
 var browserSync = require('browser-sync').create();
+
+
+
+gulp.task('merge_index', function () {
+  return gulp.src('./src/index.html')
+           .pipe(injectPartials())
+           .pipe(gulp.dest('./dest'));
+});
+
 
 
 // Static server
@@ -22,6 +33,7 @@ gulp.task('browser-sync', function() {
     });
 
     gulp.watch("*.html").on("change", browserSync.reload);
+    gulp.watch("*.html").on("change", merge_index);
 });
 
 // Lint Task

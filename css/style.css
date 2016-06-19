@@ -171,15 +171,21 @@ section.features{
 /*Testimonials*/
 
 section.testimonials{
-    padding:100px 0;
+    padding:25 0;
 }
 /*Webvelop*/
 section.webvelop{
-    padding:50px;
+    padding:100px 35px;
+    text-align: center;
 }
-
+.webvelop h2{
+    font-size:50px;
+    margin:50px 0;
+}
 section.webvelop ul{
     list-style: none;
+    text-align: left;
+    margin-left:100px;
 }
 
 section.webvelop i{
@@ -349,23 +355,25 @@ float: left;
 }
 
 .huge {
-    color: #fff;
-    float: left;
+        color: #fff;
+    float: none;
     font-size: 80px;
     font-weight: bold;
     padding-right: 10px;
+    display: block;
+    clear: both;
+    margin: 0;
+    text-align: center;
 }
 
-.huge .symbol {
-    font-size: 50px;
-}
 
 .smaller {
     color: #fff;
     display: block;
-    font-size: 18px;
-    margin-top: 35px;
-}
+    font-size: 36px;
+    margin-top: 0;
+    float: none;
+    text-align: center;}
 /*shopify*/
 section.shopify{
     text-align: justify;
@@ -382,7 +390,10 @@ height:100%;
     background: #fbab12;
 }
 
-.shopify .shopify-text{
+
+.shopify h3{
+    font-family: "Oswald", sans-serif;
+    font-size:50px;
 }
 
 .shopify-one .col-img{
@@ -402,7 +413,7 @@ height:100%;
 }
 
 .shopify-two p{
-    padding:50px;
+    padding:50px 0;
 }
 
 .shopify-two img{

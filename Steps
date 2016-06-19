@@ -7,3 +7,6 @@ Steps
  npm install --save-dev gulp
 
  npm install gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename --save-dev
+
+ npm install browser-sync gulp --save-dev
+ 

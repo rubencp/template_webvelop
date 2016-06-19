@@ -13,6 +13,9 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!-- We also need jQuery -->
+		<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+		 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
@@ -21,7 +24,7 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 
 		<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-		
+  <link rel="stylesheet" href="css/animate.min.css">
 
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -128,7 +131,7 @@
 				<div class="feature" style="text-align:center">                     
 					<a href="http://www.shopify.com/?ref=webvelopdesign" target="_blank">
                      	<img src="images/shopify.png" alt="" data-pin-nopin="true">
-                     </a>
+                    </a>
                 </div>
 				<p>Shopify: la plataforma de <br/>E-commerce m&#225;s segura y robusta.</p>
 			</div>
@@ -161,10 +164,11 @@
                                 <div class="item active">
                                     <blockquote>
                                         <div class="row">
-                                            <div class="col-sm-8 col-sm-offset-2">
+                                            <div class="col-sm-10 col-sm-offset-1">
 
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
-                                                <small>Someone famous</small>
+                                                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
+                                                <div class="arrow">
+                                                <small>Rub&#233;n Mart&#237;nez, Maxpiel</small>
                                             </div>
                                         </div>
                                     </blockquote>
@@ -173,10 +177,11 @@
                                 <div class="item">
                                     <blockquote>
                                         <div class="row">
-                                            <div class="col-sm-8 col-sm-offset-2">
+                                            <div class="col-sm-10 col-sm-offset-1">
 
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                                                <small>Someone famous</small>
+                                                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                                <div class="arrow">
+                                                <small>Brenda Palafox, Vino Entre Amigos</small>
                                             </div>
                                         </div>
                                     </blockquote>
@@ -185,10 +190,11 @@
                                 <div class="item">
                                     <blockquote>
                                         <div class="row">
-                                            <div class="col-sm-8 col-sm-offset-2">
+                                            <div class="col-sm-10 col-sm-offset-1">
 
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .</p>
-                                                <small>Someone famous</small>
+                                                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .</p>
+                                                <div class="arrow">
+                                                <small>Jorge Garc&#237;a de Le&#243;n, SmartMexico</small>
                                             </div>
                                         </div>
                                     </blockquote>
@@ -237,11 +243,11 @@
 		</section>
 		<section class="shopify">
 			<div class="row">
-				<div class="col-xs-12 col-sm-4 orange-background">
+				<div class="col-xs-12 col-sm-4 orange-background animated fadeInLeft">
 
 				</div>
 				<div class="col-xs-12 col-sm-8">
-					<div class="shopify-text one">
+					<div class="shopify-text one option animated fadeInRight">
 						<p>Shopify es la plataforma de E-commerce m&#225;s completa, segura y flexible que combina herramientas para que tu tienda sea lo m&#225;s efectiva posible.  La plataforma le da una experiencia &#250;nica para tu cliente, y te permite llevar las cuentas de tus clientes, guardando sus perfiles, compras, pagos etc. Adem&#225;s integra un sistema avanzado de seguimiento de cuentas y obtener estad&#237;sticas. </p>
 					</div>
 				</div>
@@ -283,6 +289,18 @@
 							<li>
 								<a href="http://www.webvelopdesign.com">www.webvelopdesign.com</a>
 							</li>
+						</ul>
+						<ul class="social">
+							<li>
+								<a href="https://www.facebook.com/webvelopdesign"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							</li>
+							<li>
+								<a href="https://twitter.com/webvelopdesign"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
 						</ul>
 					</div>
 				</div>

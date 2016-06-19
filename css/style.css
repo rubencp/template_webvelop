@@ -212,6 +212,8 @@ section.cta p {
 }
 /*/* Carousel */
 
+/* Carousel */
+
 #quote-carousel {
     padding: 0 10px 30px 10px;
     margin-top: 30px;
@@ -272,47 +274,6 @@ section.cta p {
     font-family: 'Fontawesome';
     float: left;
     margin-right: 10px;
-}
-
-/*Numbers*/
-section.numbers{
-  background: #00A6C2;
-  
-}
-.divider {
-    padding-bottom: 54px;
-        overflow: hidden;
-    padding-top: 54px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-section.numbers .col-sm-3{
-float: left;
-    margin: 0;
-    max-width: 700px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: left;
-}
-
-.huge {
-    color: #fff;
-    float: left;
-    font-size: 80px;
-    font-weight: bold;
-    padding-right: 10px;
-}
-
-.huge .symbol {
-    font-size: 50px;
-}
-
-.smaller {
-    color: #fff;
-    display: block;
-    font-size: 18px;
-    margin-top: 35px;
 }
 
 /*shopify*/

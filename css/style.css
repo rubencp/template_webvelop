@@ -182,15 +182,12 @@ section.webvelop{
     font-size:50px;
     margin:50px 0;
 }
-section.webvelop ul{
+.webvelop ul{
     list-style: none;
     text-align: left;
     margin-left:100px;
 }
 
-section.webvelop i{
-    color:#00A6C2;
-}
 /*testimonials*/
 p.testimonial{
     padding:20px;
@@ -202,13 +199,18 @@ p.testimonial{
 .testimonials .arrow{
     width: 0;
     height: 0;
-    margin: 0 auto -1px;
+    margin: 0 auto;
     display: block;
-    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
-    border-top-color: rgba(255,255,255,.3);
+    border-bottom-color: rgba(255,255,255,.3);
 
+}
+
+.testimonials small{
+    color: #fff;
+    margin: 15px;
 }
 /*CTA*/
 
@@ -298,10 +300,12 @@ input#submit{
     right: -60px;
 }
 #quote-carousel .carousel-indicators {
-    right: 50%;
-    top: auto;
-    bottom: 0px;
-    margin-right: -19px;
+    z-index: 15;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 43px;
+    position:initial;
 }
 #quote-carousel .carousel-indicators li {
     width: 50px;

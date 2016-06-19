@@ -168,9 +168,14 @@ section.features{
     padding: 90px 50px 30px;
 }
 
+/*Testimonials*/
+
+section.testimonials{
+    padding:100px 0;
+}
 /*Webvelop*/
 section.webvelop{
-    padding:35px;
+    padding:50px;
 }
 
 section.webvelop ul{
@@ -391,6 +396,11 @@ height:100%;
     padding:50px 0;
 }
 
+.shopify-two{
+    background: #eee;
+    padding:50px 0;
+}
+
 .shopify-two p{
     padding:50px;
 }
@@ -401,6 +411,10 @@ height:100%;
 
 .shopify-three img{
     width:100%;
+}
+
+.shopify-three p{
+    padding:50px 0;
 }
 /*footer*/
 .btn-cool-wrapper{

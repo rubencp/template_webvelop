@@ -1,0 +1,19 @@
+{
+  "name": "tiendas_productos_mexicanos",
+  "version": "1.0.0",
+  "description": "Landing Page with partials",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "dianitacgp@imac:/projects/GitRepo/template_landingpage_scratch"
+  },
+  "keywords": [
+    "template",
+    "landing-page"
+  ],
+  "author": "Ruben & Diana",
+  "license": "MIT"
+}

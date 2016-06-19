@@ -56,6 +56,7 @@ $( document ).ready(function() {
   function() {
     console.log("I am @ section.shopify 1");
     $('div.shopify-text').eq(0).animateCss("fadeInRight");
+    $('div.shopify-image').eq(0).animateCss("fadeInLeft");
   }, { offset: '80%'});
 
 
@@ -63,6 +64,7 @@ $( document ).ready(function() {
   function() {
     console.log("I am @ section.shopify 2");
     $('div.shopify-text').eq(1).animateCss("fadeInLeft");
+    $('div.shopify-image').eq(1).animateCss("fadeInRight");
   }, { offset: '80%'});
 
 
@@ -70,6 +72,7 @@ $( document ).ready(function() {
   function() {
     console.log("I am @ section.shopify 3");
     $('div.shopify-text').eq(2).animateCss("fadeInRight");
+    $('div.shopify-image').eq(2).animateCss("fadeInLeft");
   }, { offset: '80%'});
 
 

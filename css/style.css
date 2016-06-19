@@ -127,6 +127,7 @@ form .btn-cool-wrapper{
 section.first{
     background-image:url('../images/background2.jpg');
     background-size: 100%;
+    background-attachment: fixed;
 }
 section.first .first-background{
 	background: -webkit-linear-gradient(bottom right, rgba(0,166,194,0.75) 0%, rgba(31,200,219,0.75) 51%, rgba(44,181,232,0.75) 75%); /* For Safari 5.1 to 6.0 */
@@ -173,6 +174,25 @@ section.webvelop ul{
 
 section.webvelop i{
     color:#00A6C2;
+}
+/*testimonials*/
+p.testimonial{
+    padding:20px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius:5px;
+    margin-bottom:0;
+}
+
+.testimonials .arrow{
+    width: 0;
+    height: 0;
+    margin: 0 auto -1px;
+    display: block;
+    border-top: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top-color: rgba(255,255,255,.3);
+
 }
 /*CTA*/
 
@@ -234,23 +254,7 @@ input#submit{
     border-top: 1px solid #fff;
 }
 
-section.cta p {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0 0 5px;
-}
 
-.contacto li {
-    display: inline-block;
-    padding: 0 10px;
-    border-right: 1px solid #fff;
-}
-
-.contacto a {
-    color: #fff;
-    font-size: 18px;
-}
 /*/* Carousel */
 
 /* Carousel */
@@ -364,26 +368,43 @@ section.shopify{
     padding:100px 50px;
 }
 
-/*cta*/
+/*footer*/
 .btn-cool-wrapper{
 margin-bottom:30px;
 }
 
-/*footer*/
-.social_icons {
-    text-align: center;
-    margin: 1em auto;
-    display: inline-block;
-    list-style: none!important;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    transition: all .5s ease;
+section.cta p {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0 0 5px;
 }
-.social_icons li {
-    padding: 0 .5em;
+.contact-wrapper p{
+    font-size:30px;
+}
+.contacto li {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #fff;
 }
 
+.contacto a, .contacto li {
+    color: #fff;
+    font-size: 20px;
+}
+
+.social{
+    margin:30px;
+}
+.social li{
+     display: inline-block;
+    padding: 0 10px;
+}
+
+.social li a {
+    color: #fff;
+    font-size: 26px;
+}
 /*Animations*/
 
 

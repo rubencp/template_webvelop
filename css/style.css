@@ -148,7 +148,12 @@ section.first .first-background{
     width: 100%;
     margin: 40px;
 }
-
+.arrow-top-wrapper{
+    position: absolute;
+    right: -133px;
+    top: 265px;
+    z-index: 99;
+}
 .first .beneficios{
 	padding:20px 10px;
 }
@@ -360,14 +365,43 @@ float: left;
 section.shopify{
     text-align: justify;
 }
+
+section.shopify .row{
+    margin:100px 50px;
+}
+
+section.shopify .col{
+height:100%;
+    }
 .orange-background{
     background: #fbab12;
 }
 
 .shopify .shopify-text{
-    padding:100px 50px;
 }
 
+.shopify-one .col-img{
+    text-align: center;
+}
+.shopify-one img{
+    width:150px;
+}
+
+.shopify-one p{
+    padding:50px 0;
+}
+
+.shopify-two p{
+    padding:50px;
+}
+
+.shopify-two img{
+    width:100%;
+}
+
+.shopify-three img{
+    width:100%;
+}
 /*footer*/
 .btn-cool-wrapper{
 margin-bottom:30px;
@@ -382,15 +416,26 @@ section.cta p {
 .contact-wrapper p{
     font-size:30px;
 }
+.contact-wrapper h4{
+    font-size:40px;
+}
 .contacto li {
     display: inline-block;
     padding: 0 10px;
     border-right: 1px solid #fff;
 }
 
+.contacto li:last-child{
+    border-right: 0;
+}
+
 .contacto a, .contacto li {
     color: #fff;
     font-size: 20px;
+}
+
+.contacto a:hover{
+    text-decoration:none;
 }
 
 .social{

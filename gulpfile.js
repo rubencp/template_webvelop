@@ -16,13 +16,29 @@ var browserSync = require('browser-sync').create();
 
 
 
-gulp.task('merge_index', function () {
-  return gulp.src('./src/index.html')
+gulp.task('merge_index', merge_partials );
+
+
+function merge_partials(){
+      return gulp.src('./src/index.html')
            .pipe(injectPartials())
-           .pipe(gulp.dest('./dest'));
-});
+           .pipe(gulp.dest('./'));
+}
 
 
+
+// Start a server with LiveReload to preview the site in
+function server(done) {
+  browserSync.init({
+    server: './'
+  });
+  done();
+}
+
+// Watch for file changes
+function watch() {
+  gulp.watch(['src/**/*.html', 'src/partials/**/*']).on('change', gulp.series(merge_partials, browserSync.reload));
+}
 
 // Static server
 gulp.task('browser-sync', function() {
@@ -75,4 +91,8 @@ gulp.task('watch', function() {
 
 // Default Task
 //gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
-gulp.task('default', ['browser-sync']);
+//gulp.task('default', [ server , watch ] );
+
+gulp.task('server_task',
+  gulp.series(server, watch));
+

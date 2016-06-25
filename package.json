@@ -1,0 +1,29 @@
+{
+  "name": "tiendas_productos_mexicanos",
+  "version": "1.0.0",
+  "description": "Landing Page with partials",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "dianitacgp@imac:/projects/GitRepo/template_landingpage_scratch"
+  },
+  "keywords": [
+    "template",
+    "landing-page"
+  ],
+  "author": "Ruben & Diana",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "git+https://github.com/gulpjs/gulp.git#4.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-inject-partials": "0.0.3",
+    "gulp-jshint": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.3"
+  }
+}

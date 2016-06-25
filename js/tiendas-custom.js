@@ -10,11 +10,11 @@ $.fn.extend({
 
  
 $( document ).ready(function() {
-    console.log( "ready!" );
+    //console.log( "ready!" );
 
  $("section.features").waypoint(
   function() {
-    console.log("I am @ section.features");
+    //console.log("I am @ section.features");
     $('div.feature').eq(0).animateCss('slideInLeft');
     $('div.feature').eq(1).animateCss('bounce');
     $('div.feature').eq(2).animateCss('bounce');
@@ -24,7 +24,7 @@ $( document ).ready(function() {
 
   $("section.testimonials").waypoint(
   function() {
-    console.log("I am @ section.testimonials");
+    //console.log("I am @ section.testimonials");
 
   }, { offset: '30%'});
 
@@ -32,7 +32,7 @@ $( document ).ready(function() {
 
   $("section.webvelop").waypoint(
   function() {
-    console.log("I am @ section.webvelop");
+    //console.log("I am @ section.webvelop");
     $("section.webvelop p").eq(0).animateCss('slideInLeft');
     $("section.webvelop p").eq(1).animateCss('slideInRight');
     $("section.webvelop p").eq(2).animateCss('slideInLeft');
@@ -44,7 +44,7 @@ $( document ).ready(function() {
 
   $("section.numbers").waypoint(
   function() {
-    console.log("I am @ section.numbers");
+    //console.log("I am @ section.numbers");
     $("section.numbers").animateCss('fadeInUp');
   }, { offset: '90%'});
 
@@ -54,7 +54,7 @@ $( document ).ready(function() {
 
   $("div.shopify-one").waypoint(
   function() {
-    console.log("I am @ section.shopify 1");
+    //console.log("I am @ section.shopify 1");
     $('div.shopify-text').eq(0).animateCss("fadeInRight");
     $('div.shopify-image').eq(0).animateCss("fadeInLeft");
   }, { offset: '80%'});
@@ -62,7 +62,7 @@ $( document ).ready(function() {
 
   $("div.shopify-two").waypoint(
   function() {
-    console.log("I am @ section.shopify 2");
+    //console.log("I am @ section.shopify 2");
     $('div.shopify-text').eq(1).animateCss("fadeInLeft");
     $('div.shopify-image').eq(1).animateCss("fadeInRight");
   }, { offset: '80%'});
@@ -70,19 +70,10 @@ $( document ).ready(function() {
 
   $("div.shopify-three").waypoint(
   function() {
-    console.log("I am @ section.shopify 3");
+    //console.log("I am @ section.shopify 3");
     $('div.shopify-text').eq(2).animateCss("fadeInRight");
     $('div.shopify-image').eq(2).animateCss("fadeInLeft");
   }, { offset: '80%'});
-
-
-
-
-
-
-
-
-
 
 });
  

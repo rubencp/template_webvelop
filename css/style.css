@@ -475,6 +475,7 @@ section.cta p {
 .cta form input{
     width:100%;
     font-size:20px;
+    color: black;
 }
 
 .contact_wrapper {

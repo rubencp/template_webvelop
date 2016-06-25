@@ -1,9 +1,7 @@
 // Include gulp
-var gulp = require('gulp');
-
+var gulp           = require('gulp');
 var injectPartials = require('gulp-inject-partials');
-
-var browserSync = require('browser-sync').create();
+var browserSync    = require('browser-sync').create();
 
 function merge_partials(){
       return gulp.src('./src/index.html')
@@ -24,7 +22,7 @@ function watch() {
   gulp.watch(['src/**/*.html', 'src/partials/**/*']).on('change', gulp.series(merge_partials, browserSync.reload));
 }
 
-gulp.task('server_task',
+gulp.task('server',
   gulp.series(server, watch));
 
 gulp.task('build', merge_partials );

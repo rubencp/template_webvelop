@@ -19,6 +19,7 @@ $( document ).ready(function() {
     $('div.feature').eq(1).animateCss('bounce');
     $('div.feature').eq(2).animateCss('bounce');
     $('div.feature').eq(3).animateCss('slideInRight');
+    this.destroy();
   }, { offset: '30%'});
 
 
@@ -39,6 +40,7 @@ $( document ).ready(function() {
     $("section.webvelop p").eq(3).animateCss('slideInRight');
     $("section.webvelop p").eq(4).animateCss('slideInLeft');
     $("section.webvelop p").eq(5).animateCss('slideInRight');
+    this.destroy();
   }, { offset: '30%'});
 
 
@@ -46,6 +48,8 @@ $( document ).ready(function() {
   function() {
     //console.log("I am @ section.numbers");
     $("section.numbers").animateCss('fadeInUp');
+    this.destroy();
+
   }, { offset: '90%'});
 
 
@@ -57,6 +61,7 @@ $( document ).ready(function() {
     //console.log("I am @ section.shopify 1");
     $('div.shopify-text').eq(0).animateCss("fadeInRight");
     $('div.shopify-image').eq(0).animateCss("fadeInLeft");
+    this.destroy();
   }, { offset: '80%'});
 
 
@@ -65,6 +70,8 @@ $( document ).ready(function() {
     //console.log("I am @ section.shopify 2");
     $('div.shopify-text').eq(1).animateCss("fadeInLeft");
     $('div.shopify-image').eq(1).animateCss("fadeInRight");
+    this.destroy();
+
   }, { offset: '80%'});
 
 
@@ -73,6 +80,7 @@ $( document ).ready(function() {
     //console.log("I am @ section.shopify 3");
     $('div.shopify-text').eq(2).animateCss("fadeInRight");
     $('div.shopify-image').eq(2).animateCss("fadeInLeft");
+    this.destroy();
   }, { offset: '80%'});
 
 });

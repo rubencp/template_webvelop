@@ -301,7 +301,13 @@ p.testimonial{
 .item blockquote {
     border-left: none;
     margin: 0;
+
 }
+
+blockquote a{
+    color: white;
+}
+
 .item blockquote p:before {
     content: "\f10d";
     font-family: 'Fontawesome';

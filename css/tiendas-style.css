@@ -148,7 +148,7 @@ padding:0;
 
 
 .first form .btn-cool-wrapper{
-    margin-bottom:0;
+    margin:0 auto;
 }
 
 .first  #mc_embed_signup .button.btn-cool{
@@ -406,7 +406,7 @@ section.cta{
     text-align:center;
 }
 
-.cta .btn-cool-wrapper {
+.btn-cool-wrapper {
     display: table;
     width: 100%;
     max-width: 285px;

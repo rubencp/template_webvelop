@@ -146,9 +146,18 @@ h1{
 padding:0;
 }
 
+ .btn-cool-wrapper {
+    display: table;
+    width: 100%;
+    max-width: 285px;
+    margin: 25px auto 30px;
+    padding: 10px;
+    background-color: rgba(0,0,0,.1);
+    box-shadow: inset 0 0 3px 1px rgba(0,0,0,.2);
+  }
 
 .first form .btn-cool-wrapper{
-    margin-bottom:0;
+    margin: 0 auto;
 }
 
 .first  #mc_embed_signup .button.btn-cool{
@@ -335,7 +344,7 @@ float: left;
 .huge {
         color: #fff;
     float: none;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bold;
     padding-right: 10px;
     display: block;
@@ -414,16 +423,7 @@ section.cta{
     background-size: 100%;
     background-attachment: fixed;
 }
-
-.cta .btn-cool-wrapper {
-    display: table;
-    width: 100%;
-    max-width: 285px;
-    margin: 25px auto 30px;
-    padding: 10px;
-    background-color: rgba(0,0,0,.1);
-    box-shadow: inset 0 0 3px 1px rgba(0,0,0,.2);
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .cta input#submit{

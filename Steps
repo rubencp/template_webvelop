@@ -16,3 +16,6 @@ Steps
   <!-- partial -->
 
 
+Para acentos??
+npm install --save-dev gulp-convert-encoding
+.pipe(convertEncoding({to: 'iso-8859-15'}))

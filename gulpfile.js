@@ -2,10 +2,12 @@
 var gulp           = require('gulp');
 var injectPartials = require('gulp-inject-partials');
 var browserSync    = require('browser-sync').create();
+var convertEncoding = require('gulp-convert-encoding');
 
 function merge_partials(){
       return gulp.src('./src/index.html')
            .pipe(injectPartials())
+           .pipe(convertEncoding({to: 'iso-8859-15'}))
            .pipe(gulp.dest('./'));
 }
 

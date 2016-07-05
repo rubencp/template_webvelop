@@ -55,8 +55,8 @@ section.first .first-background{
   background: linear-gradient(to bottom right, rgba(0,166,194,0.75) 0%, rgba(31,200,219,0.75) 51%, rgba(44,181,232,0.75) 75%); /* Standard syntax */
   color:#fff;
   padding:20px;
-    height:545px;
-    background-tra
+  height:470px;
+  /*background-tra*/
 }
 
 .title-wrapper{
@@ -191,7 +191,7 @@ padding:0;
 
 /*Features*/
 section.features{
-    padding: 90px 50px 30px;
+    padding: 20px 50px 0px;
 }
 
 .features div{

@@ -16,6 +16,10 @@
 <link rel="stylesheet" href="css/animate.min.css">
 <link rel="stylesheet" href="https://github.com/daneden/animate.css/blob/master/animate.min.css">
 <link rel="stylesheet" type="text/css" href="css/buceo-style.css">
+<link rel="stylesheet" type="text/css" href="css/jsor_slider.css">
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
@@ -26,11 +30,16 @@
 
  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
  <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+ <script type="text/javascript" src="js/slider_config.js"></script>
+
+      <!-- use jssor.slider.debug.js instead for debug -->
+
+
     <!-- partial -->
   </head>
   <body>
 
-  <!-- partial:modulos/_modal_slider.html -->
+  <!-- partial:modulos/_modals_sliders.html -->
   <!-- Button trigger modal
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   Launch demo modal
@@ -46,158 +55,8 @@
         <h4 class="modal-title" id="myModalLabel">Sitios de Inmersion</h4>
       </div>
       <div class="modal-body">
-            <!-- partial:_slider.html -->
+            <!-- partial:_slider_sitios.html -->
             
-  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
-    <!-- use jssor.slider.debug.js instead for debug -->
-    <script>
-        jQuery(document).ready(function ($) {
-            
-            var jssor_1_SlideoTransitions = [
-              [{b:0,d:600,y:-290,e:{y:27}}],
-              [{b:0,d:1000,y:185},{b:1000,d:500,o:-1},{b:1500,d:500,o:1},{b:2000,d:1500,r:360},{b:3500,d:1000,rX:30},{b:4500,d:500,rX:-30},{b:5000,d:1000,rY:30},{b:6000,d:500,rY:-30},{b:6500,d:500,sX:1},{b:7000,d:500,sX:-1},{b:7500,d:500,sY:1},{b:8000,d:500,sY:-1},{b:8500,d:500,kX:30},{b:9000,d:500,kX:-30},{b:9500,d:500,kY:30},{b:10000,d:500,kY:-30},{b:10500,d:500,c:{x:87.50,t:-87.50}},{b:11000,d:500,c:{x:-87.50,t:87.50}}],
-              [{b:0,d:600,x:410,e:{x:27}}],
-              [{b:-1,d:1,o:-1},{b:0,d:600,o:1,e:{o:5}}],
-              [{b:-1,d:1,c:{x:175.0,t:-175.0}},{b:0,d:800,c:{x:-175.0,t:175.0},e:{c:{x:7,t:7}}}],
-              [{b:-1,d:1,o:-1},{b:0,d:600,x:-570,o:1,e:{x:6}}],
-              [{b:-1,d:1,o:-1,r:-180},{b:0,d:800,o:1,r:180,e:{r:7}}],
-              [{b:0,d:1000,y:80,e:{y:24}},{b:1000,d:1100,x:570,y:170,o:-1,r:30,sX:9,sY:9,e:{x:2,y:6,r:1,sX:5,sY:5}}],
-              [{b:2000,d:600,rY:30}],
-              [{b:0,d:500,x:-105},{b:500,d:500,x:230},{b:1000,d:500,y:-120},{b:1500,d:500,x:-70,y:120},{b:2600,d:500,y:-80},{b:3100,d:900,y:160,e:{y:24}}],
-              [{b:0,d:1000,o:-0.4,rX:2,rY:1},{b:1000,d:1000,rY:1},{b:2000,d:1000,rX:-1},{b:3000,d:1000,rY:-1},{b:4000,d:1000,o:0.4,rX:-1,rY:-1}]
-            ];
-            
-            var jssor_1_options = {
-              $AutoPlay: true,
-              $Idle: 2000,
-              $CaptionSliderOptions: {
-                $Class: $JssorCaptionSlideo$,
-                $Transitions: jssor_1_SlideoTransitions,
-                $Breaks: [
-                  [{d:2000,b:1000}]
-                ]
-              },
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
-            
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-            
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizing
-            function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 600);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $(window).bind("load", ScaleSlider);
-            $(window).bind("resize", ScaleSlider);
-            $(window).bind("orientationchange", ScaleSlider);
-            //responsive code end
-        });
-    </script>
-
-    <style>
-        
-        /* jssor slider bullet navigator skin 01 css */
-        /*
-        .jssorb01 div           (normal)
-        .jssorb01 div:hover     (normal mouseover)
-        .jssorb01 .av           (active)
-        .jssorb01 .av:hover     (active mouseover)
-        .jssorb01 .dn           (mousedown)
-        */
-        .jssorb01 {
-            position: absolute;
-        }
-        .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
-            position: absolute;
-            /* size of bullet elment */
-            width: 12px;
-            height: 12px;
-            filter: alpha(opacity=70);
-            opacity: .7;
-            overflow: hidden;
-            cursor: pointer;
-            border: #000 1px solid;
-        }
-        .jssorb01 div { background-color: gray; }
-        .jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
-        .jssorb01 .av { background-color: #fff; }
-        .jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
-
-        /* jssor slider arrow navigator skin 02 css */
-        /*
-        .jssora02l                  (normal)
-        .jssora02r                  (normal)
-        .jssora02l:hover            (normal mouseover)
-        .jssora02r:hover            (normal mouseover)
-        .jssora02l.jssora02ldn      (mousedown)
-        .jssora02r.jssora02rdn      (mousedown)
-        */
-        .jssora02l, .jssora02r {
-            display: block;
-            position: absolute;
-            /* size of arrow element */
-            width: 55px;
-            height: 55px;
-            cursor: pointer;
-            background: url('img/a02.png') no-repeat;
-            overflow: hidden;
-        }
-        .jssora02l { background-position: -3px -33px; }
-        .jssora02r { background-position: -63px -33px; }
-        .jssora02l:hover { background-position: -123px -33px; }
-        .jssora02r:hover { background-position: -183px -33px; }
-        .jssora02l.jssora02ldn { background-position: -3px -33px; }
-        .jssora02r.jssora02rdn { background-position: -63px -33px; }
-
-
-.modal-dialog {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.modal-content {
-  height: auto;
-  min-height: 100%;
-  border-radius: 0;
-  background: rgba(255, 255, 255, .5);
-}
-
-
-/*
-
-   .modal.modal-fullscreen .modal-content {
-    background: rgba(0, 0, 0, .5);
-  }
-  .modal.modal-fullscreen .modal-header {
-    border: 0;
-    color: #fff;
-  }
-  .modal.modal-fullscreen .modal-footer {
-    border-color: rgba(0, 0, 0, .5);
-  }
-  */
- 
-    </style>
-
-
-
-
 
     <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
         <!-- Loading Screen -->
@@ -207,65 +66,67 @@
         </div>
         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/002.jpg" />
-                <div data-u="caption" data-t="0" style="position: absolute; top: 320px; left: 30px; width: 350px; height: 30px; background-color: rgba(235,81,0,0.5); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">mobile ready, touch swipe</div>
+                <img data-u="image" src="img/anemona.jpg" />
+                <div class="text_style_nr1" data-u="caption" data-t="0">Anemonas</div>
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/007.jpg" />
-                <div data-u="caption" data-t="1" data-3d="1" style="position: absolute; top: -50px; left: 125px; width: 350px; height: 30px; background-color: rgba(235,81,0,0.5); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">time lined layer animation</div>
+                <img data-u="image" src="img/morene.jpg" />
+                <div class="text_style_flyin_spin" data-u="caption" data-t="1" data-3d="1">Morenas</div>
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/003.jpg" />
-                <div data-u="caption" data-t="2" style="position: absolute; top: 30px; left: -380px; width: 350px; height: 30px; background-color: rgba(235,81,0,0.5); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">finger catchable right to left</div>
+                <img data-u="image" src="img/nuddy1.jpg" />
+                <div class="text_style_3" data-u="caption" data-t="2">Nuddy Branch</div>
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/004.jpg" />
-                <div data-u="caption" data-t="3" style="position: absolute; top: 30px; left: 30px; width: 350px; height: 30px; background-color: rgba(235,81,0,0.5); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">responsive, scale smoothly</div>
+                <img data-u="image" src="img/lion1.jpg" />
+                <div class="text_style_4" data-u="caption" data-t="3" >Pez Leon</div>
+            </div>
+
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/turtle.jpg" />
+                <div class="text_style_5" data-u="caption" data-t="4" >Tortugas</div>
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/005.jpg" />
-                <div data-u="caption" data-t="4" style="position: absolute; top: 30px; left: 30px; width: 350px; height: 30px; background-color: rgba(235,81,0,0.6); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">image, text, and custom layers</div>
+                <img data-u="image" src="img/nuddy2.jpg" />
+                <div class="text_style_6" data-u="caption" data-t="5" >Nuddy Branch</div>
             </div>
+
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/006.jpg" />
-                <div data-u="caption" data-t="5" style="position: absolute; top: 30px; left: 600px; width: 350px; height: 30px; background-color: rgba(235,81,0,0.5); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">tons of transition type</div>
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/009.jpg" />
-                <div data-u="caption" data-t="6" style="position: absolute; top: 30px; left: 30px; width: 350px; height: 30px; background-color: rgba(235,81,0,0.5); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">visual slider maker</div>
+                <img data-u="image" src="img/wreck1.jpg" />
+                <div class="text_style_7" data-u="caption" data-t="6" >Barcos hundidos</div>
             </div>
             <div data-b="0" data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/008.jpg" />
-                <div data-u="caption" data-t="7" style="position: absolute; top: -50px; left: 30px; width: 350px; height: 30px; background-color: rgba(235,81,0,0.5); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">play in and play out</div>
+                <img data-u="image" src="img/manatee.jpg" />
+                <div class="text_style_8" data-u="caption" data-t="7" >Manatees</div>
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/011.jpg" />
-                <div data-u="caption" data-t="8" data-3d="1" style="position: absolute; top: 25px; left: 150px; width: 250px; height: 250px; background-color: rgba(40,177,255,0.6); overflow: hidden;">
-                    <div data-u="caption" data-t="9" style="position: absolute; top: 100px; left: 25px; width: 200px; height: 50px; font-size: 24px; line-height: 50px;">A Child Layer</div>
+                <img data-u="image" src="img/white_morene.jpg" />
+                <div class="text_style_9" data-u="caption" data-t="8" data-3d="1">
+                    <div class="text_style_9_1" data-u="caption" data-t="9">Morenas Blancas</div>
                 </div>
             </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/010.jpg" />
-                <div data-u="caption" data-t="10" data-3d="1" style="position: absolute; top: 25px; left: 100px; width: 250px; height: 250px; background-color: rgba(40,177,255,0.6);">
+                <img data-u="image" src="img/monringdive.jpg" />
+                <div class="text_style_10" data-u="caption" data-t="10" data-3d="1">
                     <div style="margin: 15px; font-size: 20px;">
-                        <p>This is full customized content layer.<br />
+                        <p>Todo esto y mucho más.<br />
                         </p>
                         <p>
-                            Everything is allowed
+                            Todo el buceo ilimitado Incluido
                             
                         </p>
-                        You can put
+                        Incluye Hospedaje y Comidas
                         
                         <a href="http://wwww.jssor.com">
-                            a link
-                        </a> or an image
+                            
+                        </a>
                         
                         <img src="img/icon_chrome.png" /> here.
                         
                     </div>
                 </div>
             </div>
-            <a data-u="ad" href="http://www.jssor.com" style="display:none">Bootstrap Slider</a>
+            
         
         </div>
         <!-- Bullet Navigator -->
@@ -280,7 +141,59 @@
             <!-- partial --> 
       </div>
       <div class="modal-footer">
-       <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Reserva tu lugar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal-resort" tabindex="-1" role="dialog" aria-labelledby="myModalLabelResort">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabelResort">Beach Safari Resort</h4>
+      </div>
+      <div class="modal-body">
+            <!-- partial:_slider_resort.html -->
+                <div id="jssor_2" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/night_resort2.jpg" />
+                <div class="text_style_nr1" data-u="caption" data-t="0">At night</div>
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/sunrise.jpg" />
+                <div class="text_style_flyin_spin" data-u="caption" data-t="1" data-3d="1">sunrise</div>
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/sunset.jpg" />
+                <div class="text_style_3" data-u="caption" data-t="2">Sunset</div>
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/night_resort.jpg" />
+                <div class="text_style_4" data-u="caption" data-t="3" >Repeat</div>
+            </div>
+        
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
+            <div data-u="prototype" style="width:12px;height:12px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora02l" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora02r" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
+    </div>
+            <!-- partial --> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
         <button type="button" class="btn btn-primary">Reserva tu lugar</button>
       </div>
     </div>
@@ -288,8 +201,7 @@
 </div>
   <!-- partial -->
 
-  
-    <header>
+     <header>
     <!-- partial:partial/_header_top.html -->
     <div class="header-wrapper">
   <div class="row" style="margin-right: 0;">
@@ -404,27 +316,27 @@
    <section class="features">
     <!-- partial:partial/_features.html -->
     <div class="row">
-  <div class="col-xs-12 col-sm-3 animated fadeInLeft">
+  <div class="col-xs-12 col-sm-6 col-md-3 animated fadeInLeft">
     <div class="feature" style="text-align:center">
       <img class="" src="images/buceo/room.png">
     </div>
     <p>Hospedaje 7 dias y 6 Noches en Dive-Resort</p>
   </div>
-  <div class="col-xs-12 col-sm-3 animated fadeInUp">
+  <div class="col-xs-12 col-sm-6 col-md-3 animated fadeInUp">
     <div class="feature" style="text-align:center">
       <img class="" src="images/buceo/manati.png">
     </div>
     <p>Inmersiones ilimitadas durante la estancia</p>
   </div>
-  <div class="col-xs-12 col-sm-3 animated fadeInDown">
+  <div class="col-xs-12 col-sm-6 col-md-3 animated fadeInDown">
     <div class="feature" style="text-align:center">      
-        <img src="images/buceo/comida1.jpg" alt="" data-pin-nopin="true">
+        <img src="images/buceo/comida2.png" alt="" data-pin-nopin="true">
     </div>
     <p>Tres Comidas al día Incluidas.</p>
   </div>
-  <div class="col-xs-12 col-sm-3 animated fadeInRight">
+  <div class="col-xs-12 col-sm-6 col-md-3 animated fadeInRight">
     <div class="feature" style="text-align:center">
-      <img class="" src="images/buceo/comida1.jpg">
+      <img class="" src="img/turtle2.png">
     </div>
     <p>Staff amigable y flexibilidad en horarios</p>
   </div>
@@ -503,17 +415,12 @@
 
     <section class="shopify">
     <!-- partial:partial/_shopify.html -->
-    <div class="shopify-one">
+    <div class="shopify-one" data-toggle="modal" data-target="#myModal">
   <div class="row">
     <div class="col-xs-12 col-sm-4 col col-img">
       <div class="shopify-image">
 
-<div class="shopify-image">
-    <img class="shopifyapp" src="img/002.jpg">
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-     Ver Más
-    </button>
-</div>
+        <img class="shopifyapp" src="img/anemona.jpg">
 
       </div>
     </div>
@@ -525,14 +432,14 @@
     </div>
   </div>
 </div>
-<div class="shopify-two">
+<div class="shopify-two" >
   <div class="row">
     <div class="col-xs-12 col-sm-7 col">
       <div class="shopify-text one">
         <h3>Marsa Alam</h3>
-        <p>Marsa Alam (Arabic: ???? ????? Mars? ?Alam  IPA: [?mæ?sæ ??ælæm]) is a town in south-eastern Egypt, located on the western shore of the Red Sea. It is currently seeing fast increasing popularity as a tourist destination and development following the opening of Marsa Alam International Airport in 2003.
+        <p>   Marsa Alam (Arabe: ???? ????? Mars? ?Alam  IPA: [?mæ?sæ ??ælæm]) es una ciudad al sur-este de Egipto, localizado en la parte oeste de el Mar Rojo. Es un destino relativamente nuevo para turistas lo cual permite que mientras que se pueden disfrutar de sus playas y lugares de buceo de manera casi privada, tiene un nuevo Aeropuerto Internacional lo cual facilita el acceso a visitantes. <br/>
 
-Among the most famous beaches around Marsa Alam is the Abu Dabab beach. In Abu Dabab, turtles are a common sight and it is nearly guaranteed that when diving, one will see at least one turtle.</p>
+        Marsa Alam, tiene el balance perfecto entre un lugar aislado lejos de las masas turisticas que permite bucear en sus arrefices que se encuentran en buen estado, mientras que tiene la infraestructura para hacer inmersiones seguras (cámara hiperbárica) y tener unas vacaciones cómodas y relajadas.</p>
       </div>
     </div>
     <div class="col-xs-12 col-sm-5 col col-img">
@@ -542,17 +449,18 @@ Among the most famous beaches around Marsa Alam is the Abu Dabab beach. In Abu D
     </div>
   </div>
 </div>
-<div class="shopify-three">
+<div class="shopify-three" data-toggle="modal" data-target="#myModal-resort">
   <div class="row">
     <div class="col-xs-12 col-sm-5 col col-img">
       <div class="shopify-image">
-        <img class="shopifyapp" src="images/shoppifyapp.png">
+        <img class="shopifyapp" src="img/sunset.jpg">
       </div>
     </div>
     <div class="col-xs-12 col-sm-7 col">
       <div class="shopify-text one">
         <h3>Beach Safari Resort</h3>
-        <p>Pero sin lugar a dudas, lo que m&#225;s nos gusta de Shopify son las aplicaciones adicionales que puedes instalar dependiendo de las necesidades de tu negocio. Estas te permiten crecer junto con el sistema e ir adaptando tu tienda, con nuevas herramientas y funcionalidades.</p>
+        <p>Pero sin lugar a dudas, las instalaciónes de "Beach Safari Resort" te brindarán una estancia agradable y placentera. Sus habitaciónes son amplias y frescas. Tienen todos los servicios y aire acondicionado.<br/>
+        Al termino de el dia despues de todas tus inmersiónes podras descansar, relajarte en la alberca y prepararte para más inmersiones al dia siguiente.</p>
       </div>
     </div>
   </div>
@@ -566,16 +474,16 @@ Among the most famous beaches around Marsa Alam is the Abu Dabab beach. In Abu D
 <h2>Sólo 450 EUR por persona</h4>
 <uL>
   <li>
-    <p><img class="" src="images/web1.png" alt="">Alojamiento 7 días y 6 noches en Dive-Resort (habitación doble) con piscina</p>
+    <p><img class="wb_icon" src="images/buceo/room.png" alt="">Alojamiento 7 días y 6 noches en Dive-Resort (habitación doble) con piscina</p>
   </li>
   <li>
-    <p><img class="" src="images/web2.png" alt=""> 3 comidas al día con manjares de la región</p>
+    <p><img class="wb_icon" src="images/buceo/comida2.png" alt=""> 3 comidas al día con manjares de la región</p>
   </li>
   <li>
-    <p><img class="" src="images/web3.png" alt=""> Inmersiones ilimitadas en toda la estancia</p>
+    <p><img class="wb_icon" src="images/buceo/manati.png" alt=""> Inmersiones ilimitadas en toda la estancia</p>
   </li>
   <li>
-    <p><img class="" src="images/web4.png" alt=""> Servicio muy amable y personalizado, adaptado a los horarios del grupo</p>
+    <p><img class="wb_icon" src="img/turtle2.png" alt=""> Servicio muy amable y personalizado, adaptado a los horarios del grupo</p>
   </li>
   <li>
   <!-- <p><img class="" src="images/web5.png" alt=""> Registro, configuraci&#243;n, pruebas y puesta en marcha de la tienda virtual con la plataforma de Shopify.</p>
@@ -615,6 +523,7 @@ Among the most famous beaches around Marsa Alam is the Abu Dabab beach. In Abu D
           <a href="http://www.webvelopdesign.com">www.webvelopdesign.com</a>
         </li>
       </ul>
+      <!--
       <ul class="social">
         <li>
           <a href="https://www.facebook.com/webvelopdesign"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -627,6 +536,7 @@ Among the most famous beaches around Marsa Alam is the Abu Dabab beach. In Abu D
         </li>
         <li><a href="https://plus.google.com/103713041885320000044?prsrc=2"><i class="fa fa-google-plus" aria-hidden="true"></i></li>
       </ul>
+      -->
     </div>
   </div>
 

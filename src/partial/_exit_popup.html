@@ -1,0 +1,90 @@
+    
+<style>
+    .lightbox {
+        /** Hide the lightbox */
+        display: none;
+        /** Apply basic lightbox styling */
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        color:#333333;
+        }
+    .lightbox:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .lightbox .box {
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+        min-width:500px;
+        margin: 2% auto;
+        padding:20px;
+        background-color:#FFF;
+        box-shadow: 0px 1px 26px -3px #777777;
+        }
+        .lightbox .title {
+            margin:0;
+            padding:0 0 10px 0px;
+            border-bottom:1px #ccc solid;
+            font-size:22px;
+            }
+        .lightbox .content {
+            display:block;
+            padding:10px 0 0 0px;
+            font-size:18px;
+            line-height:22px;
+            }
+        .lightbox .close {
+            float:right;
+            display:block;
+            text-decoration:none;
+            font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size:22px;
+            color:#858585;
+            }
+    .lightbox .open {
+        /** Show lightbox when mouse leaves the browser window */
+        display: block;
+        outline: none;
+    }
+</style>
+
+    <div class="lightbox" id="text">
+        <div class="box">
+            <a class="close" href="#">X</a>
+            <!-- your title -->
+             Oferta válida solo hasta el 15.Julio
+            <div class="content">
+            <!-- your content -->
+            Esperamos verte de nuevo!!!
+            </div>
+        </div>
+    </div>
+
+
+<script type='text/javascript'>
+        // Exit intent
+    function addEvent(obj, evt, fn) {
+        if (obj.addEventListener) {
+            obj.addEventListener(evt, fn, false);
+        }
+        else if (obj.attachEvent) {
+            obj.attachEvent("on" + evt, fn);
+        }
+    }
+    // Exit intent trigger
+    addEvent(document, 'mouseout', function(evt) {
+        if (evt.toElement == null && evt.relatedTarget == null ) {
+            $('.lightbox').slideDown();
+        };
+    });
+    // Closing the Popup Box
+    $('a.close').click(function(){
+        $('.lightbox').slideUp();
+    });
+    </script>

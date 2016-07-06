@@ -21,7 +21,7 @@ function server(done) {
 
 // Watch for file changes
 function watch() {
-  gulp.watch(['src/**/*.html', 'src/partials/**/*', 'css/*.css']).on('change', gulp.series(merge_partials, browserSync.reload));
+  gulp.watch(['src/**/*.html', 'src/partials/**/*', 'css/*.css', 'js/*.js']).on('change', gulp.series(merge_partials, browserSync.reload));
 }
 
 gulp.task('server',

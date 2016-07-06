@@ -226,6 +226,10 @@ section.webvelop{
     margin-left:100px;
 }
 
+.wb_icon{
+    width: 120px;
+}
+
 /*testimonials*/
 p.testimonial{
     padding:20px;

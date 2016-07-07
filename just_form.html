@@ -1,0 +1,157 @@
+<style>
+p{
+color:#777;}
+
+/*Form*/
+form{
+background-color: #efefef;
+border-radius: 6px;
+z-index:10;
+margin-bottom:30px;
+}
+.formbox, .formbox-header, .formbox-body, .formbox-footer {
+background-color: #efefef;
+border-radius: 8px;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.formbox-header{
+background-color: #d32027;
+padding: 5px 0;
+text-align: center;
+border-radius: 6px 6px 0 0;
+font-size: 16px;
+color: #FFFFFF;
+z-index: 1;
+}
+.formbox-header:after {
+border-color:#d32027 transparent transparent;
+width: 0;
+height: 0;
+position: absolute;
+display: block;
+margin: 5px 20px 0;
+content: " ";
+border-style: solid;
+border-width: 14px 10px 0 10px;
+z-index: 1;
+}
+
+.formbox-header p{
+color:#fff;}
+.formbox-body {
+padding: 20px 20px 0;
+text-align: center;
+}
+form p {
+margin-bottom: 0;
+line-height: 20px;
+text-align: center;
+}
+form .submit_container{
+margin-bottom:0;
+}
+form input.submit{
+background: #61bd4f;
+border: 0;
+width:75%;
+border-radius: 3px;
+line-height: 1.5;
+text-align: center;
+margin: 5px 0;
+padding: 7px 18px;
+}
+button, input[type='submit'], .dark-div .light-div button, .dark-div .light-div input[type='submit'] {
+border-radius: 3px;
+line-height: 1.5;
+text-align: center;
+margin: 5px 0;
+padding: 7px 18px;
+outline: none;
+background: #1B3653;
+border: solid 1px #1B3653;
+color: #fff;
+transition: all .2s ease;
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input:not([type]), textarea {
+width: 100%;
+display: inline-block;
+padding: 3px 6px;
+background: #fff;
+border: 1px solid #ccc;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+-moz-box-shadow: inset 0 1px 1px #eee;
+-webkit-box-shadow: inset 0 1px 1px #eee;
+box-shadow: inset 0 1px 1px #eee;
+-moz-transition: all .15s linear;
+-webkit-transition: all .15s linear;
+-o-transition: all .15s linear;
+transition: all .15s linear;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+border: 1px solid #cdcdcd;
+border-radius: 0;
+}
+form label {
+display: none;
+}
+form .form_widget{
+margin:5px 0;
+}
+.formbox-footer{
+padding:10px 20px;
+text-align:center;
+}
+.formbox-footer h3{
+margin:0;
+}
+.formbox-footer p{
+line-height: 18px;
+}
+</style>
+<div class="form-wrapper">
+    <form action="gratis-report/danke.html" id="anmeldung_startseite_name-email" method="post" enctype="application/x-www-form-urlencoded" class="formbox" target="_parent">
+        <div class="formbody">
+            <input type="hidden" name="FORM_SUBMIT" value="auto_newsletter_registration_vne">
+            <input type="hidden" name="REQUEST_TOKEN" value="01392b58ba1567ba7623ee1d90da4345">
+            
+            <input type="hidden" name="action" value="subscribe">
+            <input type="hidden" name="verteiler" value="gt">
+            
+            <div class="formbox-header"><div class="ce_text block">
+                <div class="content_container">
+                    <p>Jetzt Report sichern</p>
+                </div>
+            </div>
+        </div>
+        <div class="formbox-body"><div class="ce_text block">
+            <div class="content_container">
+                <p><span style="font-size: 20px;"><strong>Ja,</strong></span> bitte sende mir den Report „7 goldene Regeln“ zu – natürlich kostenlos.</p>
+            </div>
+        </div>
+        <div class="form_widget name">
+            <label for="ctrl_2" class="last_name mandatory"><span class="invisible">Pflichtfeld </span>Name<span class="mandatory">*</span></label>    <input type="text" name="name" id="ctrl_2" class="text last_name mandatory" value="" required="" placeholder="Name">  </div>
+            <div class="form_widget email">
+                <label for="ctrl_3" class="email mandatory"><span class="invisible">Pflichtfeld </span>E-Mail<span class="mandatory">*</span></label>    <input type="email" name="email" id="ctrl_3" class="text email mandatory" value="" required="" placeholder="E-Mail">
+            </div>
+            <div class="submit_container">
+                <input type="submit" id="ctrl_4" class="submit" value="Jetzt sichern >">
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="formbox-footer">
+            <div class="ce_text">
+                <div class="content_container">
+                    <h3>Dein Geschenk</h3>
+                    <p>Für Deine Anmeldung erhälst Du diesen Report <strong>gratis</strong></p>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

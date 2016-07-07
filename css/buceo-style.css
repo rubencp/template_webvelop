@@ -438,8 +438,9 @@ section.cta{
     padding:20px;
     text-align:center;
     background-image:url('../images/buceo/background.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
+    background-repeat:no-repeat; 
 }
   border-radius: 5px;
 }

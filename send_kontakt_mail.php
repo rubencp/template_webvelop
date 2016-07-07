@@ -1,10 +1,8 @@
 <?php
  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-  $vorname = $_POST['vorname'];
-  $name = $_POST['name'];
-  $email = $_POST['email'];
+  $name = $_POST['FNAME'];
+  $email = $_POST['EMAIL'];
   $message = $_POST['message'];
-
 
 
 
@@ -16,25 +14,22 @@
   $body = $body . "E-mail: $email\n";
   $body = $body . "Message: $message\n";
 
-  if (!$_POST['name']) {
+  if (!$name) {
       $errName = 'Porfavor escriba su nombre';
       echo "no name";
   }
 
-  if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+  if (!$email || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
       $errEmail = 'Porfavor escriba su direccion de correo';
       echo "no email";
   }
 
   if (!$errName && !$errEmail) {
-    //echo "attempt sending email";
     if (mail ($to, $subject, $body, $from)) {
         $result='<div class="alert alert-success">Gracias por su informacion, estaremos en contacto</div>';
     } else {
         $result='<div class="alert alert-danger">Lo sentimos, ha ocurrido un error, intentelo mas tarde</div>';
     }
-
-
 
 
     /* Email zu Kunde */
@@ -56,11 +51,9 @@
     }
 
   }  else  {
-    //echo "email not sent";
+    // if error
   }
 
- } else {
-  //echo "no-post";
- }
+ }  // "no-post";
 
 ?>

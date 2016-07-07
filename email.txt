@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html>
 <body>
-<p>Lieber {name}</p>
+<p>Estimado {name}</p>
 
-<p>bitte klicke auf den folgenden Link,<br/>
-um Deine Anmeldung abzuschließen und Dir <br/>
-meinen GratisßReport zu sichern!</p>
+<p>Gracias por ponerte en contacto, En breve nos pondremos en comunicacion contigo <p>
 
 
-<a href='http://lars-erichsen.de/gratis-report/willkommen.html'>=>> Hier klicken & Anmeldung bestätigen... </a>
 
-<p>Du gibst mir somit die Möglichkeit, Dir von Zeit zu Zeit
-interessante Videos & News per E-Mail zusenden - natürlich
-kannst Du Dich hiervon jederzeit mit nur einem Klick wieder
-abmelden.</p>
+<a href='http://buceo.xyz'>=>> Mientras tanto puedes Revisar la oferta ... </a>
 
-<p>Beste Grüße & viel Erfolg</p>
 
-<p>Dein Lars</p>
+<p>Saludos</p>
 
-<p>P.S. <a href='http://lars-erichsen.de/gratis-report/willkommen.html'>=>> Hier klicken & Anmeldung bestätigen...</a></p>
+<p>Diana Garcia (Buceo.xyz)</p>
 
-<p>Erichsen Geld & Golf – ATLAS Research GmbH · Dollgasse 13 - 97084 Würzburg<br/>
-Geschäftsführer: Stefan Böhm, Dr. Detlef Rettinger UST-ID-Nr. DE 175922139 · <br/>Sitz: Würzburg
-– HRB 5416 · Gerichtsstand Würzburg · Telefax: +49 (0)931-298-9089</p>
+
+<p>Buceo.xyz – Some Business GmbH · Strasse Nr - 92237 Sulzbach-Rosenberg<br/>
+Geschäftsführer: Name, Name, nachname UST-ID-Nr. DE 1111111111 · <br/>
+Sitz: Würzburg – HRB 1234 · Gerichtsstand Amberg · Telefax: +49 (0)176-648-25244</p>
 
 </body>
 </html>
